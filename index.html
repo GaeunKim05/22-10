@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JAGOGA</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+	
+	<style type="text/css">
+		*{box-sizing: border-box;}
+		html{ font-family: 'Noto Sans KR', sans-serif; font-size: 16px;}
+		body,h2,h1,p,li,ol,ul{margin: 0px; padding: 0px;}
+		h1,h2{font-family: 'Montserrat', sans-serif;}
+		h1,h2,p{font-size: 1rem;}
+		h1{font-size: 1.5rem;}
+		h2{font-size: 2rem;}
+
+		.row{width: 1200px; margin: auto; padding: 50px;}
+		
+		nav{background: black; height: 44px;}
+
+		nav .logo{height: 44px; line-height:44px; width: 200px; background: black; float: left; list-style-type: none;}
+		nav ul{width: 600px; background: black; height: 44px; float: right; margin-right: 40px;}
+		nav li{background: black; list-style-type: none; width: 33.33%;color: white; float: left; height: 44px; text-align: center; line-height: 44px; }
+		nav ul li a{display: block; background: black; color: white;}
+		nav .row{padding: 0px 20px;}
+		
+
+		.desktop{display: flex; gap: 10px
+					justify-content: space-between;}
+		.desktop li{list-style-type: none;}
+		.desktop li a{text-decoration: none; font-family:'Montserrat', sans-serif; display: block; }
+		.desktop li a:hover{background: white; color: black;}
+		.col1{width: 33.3%; padding: 10px;}
+		.col2{width: 66.6%; padding: 10px;}
+		.flex{display: flex;}
+		.btn{margin-left: 300px; margin-top: 50px; background: black; border: 2px solid black; color: white; font-size: 20px; padding: 10px 20px; width: 420px; cursor: pointer; position: relative;}
+		.btn-swap span{position: absolute; top: 0; left: 0; background-color: white; padding: 10px 20px; width: 100% ;color: black; opacity: 0; transition: opacity 0.5s;}
+		.btn-swap:hover span{opacity: 1;}
+		.btn-swap: :before{content: ""; width: 100%; height: 100%; position: absolute; left: 0; top: 0;background-color: white;transition: opacity 0.5s;}
+		.btn-swap:hover: :before{ width: 100%; }
+
+
+		</style>
+</head>
+<body>
+		<nav>
+			<div class="row">
+		<div class="logo">
+			<h1 style="color: white;">JAGOGA</h1>
+		</div>
+			<ul class="desktop flex">
+				<li><a href="#a"> ABOUT</a></li>
+				<li><a href="#a">SHOP</a></li>
+				<li><a href="#b">CONTACT</a></li>
+			</ul>
+		</div>
+	</nav>
+	<hr style="width: 1200px; height:1px;border:none;background-color:black; margin-top: 100px;">
+	
+	<section>
+		<div class="row flex">
+				<div class="col1"><img src="nature.jpg" style="width: 500px; margin-left: 5px; margin-top: 100px; margin-bottom: 100px;">
+				</div>
+				<div class="col2">
+					<h2 style="padding-top: 110px; padding-left: 300px; font-size: 1.4rem;">Nature Concert</h2>
+					<p style="padding-top: 150px;padding-left: 300px;">숲 속의 소리 〡물기 어린  〡내적 평온</p>
+					<p style="padding-top: 50px;padding-left: 300px;">어두운 숲 속에서 한 줄기 햇살이 내리쬐는 듯한 조명 아래 새가 지저귀는 소리, 새벽 안개비 소리, 풀숲이 바스락거리는 소리를 느끼며 깊은 잠으로 빠져들 수 있습니다. 은은한 풀내음과 오크우드의 묵직하고 진한 나무향이 심신을 안정시켜주며 비 내리는 숲 속에 있는 듯한 습도로 자연의 분위기를 한 층 더 느끼며 숙면에 취할 수 있습니다. </p>
+
+					<button class="btn btn-swap">BUY NOW<span>CART</span>
+					</button>
+				</div>
+			</div>
+		</section>
+	<hr style="width: 1200px; height:1px;border:none;background-color:black; margin-top: 0px;">
+	<section>
+		<div class="row flex">
+				<div class="col1"><img src="city.jpg" style="width: 500px; margin-left: 5px; margin-top: 100px; margin-bottom: 100px;">
+				</div>
+				<div class="col2">
+					<h2 style="padding-top: 110px; padding-left: 300px; font-size: 1.4rem;">City Concert</h2>
+					<p style="padding-top: 150px;padding-left: 300px;">도심의 소리 〡 희미한 불빛  〡일상적인</p>
+					<p style="padding-top: 50px;padding-left: 300px;">바쁘고 시끄럽기만 했던 도심 소리가 아닌 멀리서 희미하게 들리는 듯한 사람들 소리와 자동차 소리들이 오히려 안정감을 줍니다. 잔잔한 불빛과 약한 진동은 점점 잠에 빠져들게 할 것입니다. 초저녁 도심의 분위기와 어울리는 묵직한 레더와 머스크향을 더해 더 깊은 잠의 세계로 인도할 것입니다.</p>
+
+					<button class="btn btn-swap">BUY NOW<span>CART</span>
+					</button>
+				</div>
+			</div>
+		</section>
+		<hr style="width: 1200px; height:1px;border:none;background-color:black; margin-top: 0px;">
+		<section>
+		<div class="row flex">
+				<div class="col1"><img src="classic.jpg" style="width: 500px; margin-left: 5px; margin-top: 100px; margin-bottom: 100px;">
+				</div>
+				<div class="col2">
+					<h2 style="padding-top: 110px; padding-left: 300px; font-size: 1.4rem;">Classic Concert</h2>
+					<p style="padding-top: 150px;padding-left: 300px;"> 오케스트라 〡 따스한 온기  〡편안한</p>
+					<p style="padding-top: 50px;padding-left: 300px;">최대한 편안하고 조용한 협주곡을 엄선하여 연주하여 잠에 빠져들게 합니다. 따뜻한 온도와 편안한 침구에서 평화로운 클래식 음악과 함께 마음을 진정시키게 될 것입니다. 오케스트라의 연주와 함께 교양을 쌓고 마음의 안식을 바라는 사람들에게 최적의 숙면을 제공하는 콘서트가 될 것입니다.</p>
+
+					<button class="btn btn-swap">BUY NOW<span>CART</span>
+					</button>
+				</div>
+			</div>
+		</section>
+
+
+
+
+	</body>
+</html>
